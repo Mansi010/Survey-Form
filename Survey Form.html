@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <h1 id="title">Student Survey Form</h1>
+    <p id="description">Thankyou for taking the time to help us improve the platform</p>
+    <form action="" id="survey-form">
+    <div class="form-group">
+        <label id="name label" for="Name">Name</label>
+        <input type="text" name="Name" id="name" class="form-control" placeholder="Enter your name" required>
+    </div>
+    <div class="form-group">
+        <label for="Email" id="email label">Email</label>
+        <input type="text" name="Email" id="email" class="form-control" placeholder="Enter your email" required>
+    </div>
+    <div class="form-group">
+        <label for="number" id="number label">Age</label>
+        <input type="number" name="Age" id="number" min="10" max="99" class="form-control" placeholder="Age" required>
+    </div>
+    <div class="form-group">
+        <p>What is your current branch?</p>
+        <select id="dropdown" name="branch" class="form-control" required>
+            <option disabled selected value>Select current branch</option>
+            <option value="Btech">Btech</option>
+            <option value="IT">IT</option>
+            <option value="Btech+MBA">Btech+MBA</option>
+            <option value="Btech+Mtech">Btech+Mtech</option>
+            <option value="other">Other</option>
+          </select>
+    </div>
+   <div class="form-group">
+       <p>Would You Recommend Amity University to Others?</p>
+       <label>
+        <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked>Definitely</label>
+        <label for="">
+            <input type="radio" name="user-recommend" class="input-radio" value="maybe" checked> Maybe</label>
+            <label >
+                <input type="radio" name="user-recommend" class="input-radio" value="not-sure" checked>Not Sure
+            </label>
+   </div>
+   <div>
+       <p>Which co-curricular activities do you like the most in the campus?</p>
+       <select id="dropdown" name="activities" class="form-control">
+           <option disabled selected value>Select the Co-curricular activities</option>
+           <option value="Dance">Dance</option>
+           <option value="Vocal and Instrumental Music">Vocal and Instrumental Music</option>
+           <option value="Hospitality Mangement">Hospitality Management</option>
+           <option value="Horse Riding"></option>
+       </select>
+   </div>
+   <div>
+    <p>
+        What events would you like to be conducted in the campus?
+        <span class="clue">(Check all that apply)</span>
+      </p>
+      <label>
+        <input name="prefer" value="Oddsey" type="checkbox" class="input-checkbox">
+        Oddsey
+      </label>
+      <label >
+          <input type="checkbox" name="prefer" class="input-checkbox" value="Poetry Recitation Session">
+          Poetry Recitation Session
+      </label>
+      <label >
+          <input type="checkbox" name="prefer" class="input-checkbox" value="Cultural Events">
+          Cultural Night
+      </label>
+      <label >
+          <input type="checkbox" name="prefer" class="input-checkbox" value="Fests">
+          Fests
+      </label>
+   </div>
+   <div class="form-group">
+    <p>Any comments or suggestions?</p>
+    <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+  </div>
+  <div class="form-group">
+    <button type="submit" id="submit" class="submit-button">
+      Submit
+    </button>
+  </div>
+</form>
+</body>
+</html>
